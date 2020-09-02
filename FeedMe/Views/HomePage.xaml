@@ -1,0 +1,179 @@
+﻿<Page x:Class="FeedMe.Views.HomePage"  
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
+      xmlns:local="clr-namespace:FeedMe.Views"  
+      mc:Ignorable="d"   
+      d:DesignHeight="480" d:DesignWidth="640"  
+      Title="HomePage">
+
+    
+    <Grid>
+        <DockPanel>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.05*" />
+                    <RowDefinition Height="Auto" /> <!-- Select user -->
+                    <RowDefinition Height="Auto" /> <!-- Set previous order -->
+                    <RowDefinition Height="Auto" /> <!-- Table of menu -->
+                    <RowDefinition Height="Auto" /> <!-- Total Price -->
+                    <RowDefinition Height="Auto" /> <!-- Comment -->
+                    <RowDefinition Height="Auto" /> <!-- Comment textbox -->
+                    <RowDefinition Height="Auto" /> <!-- Order -->
+                    <RowDefinition Height="0.05*" />
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="1">
+                    <StackPanel Orientation="Horizontal"   
+                                HorizontalAlignment="Center"  
+                                VerticalAlignment="Center" 
+                                Width="640">
+                        
+                        <DatePicker HorizontalAlignment="Left" Margin="0,0,0,0"   
+                            Name="Cal1" VerticalAlignment="Top" Width="180" 
+                                    FontSize="14"/>
+                        
+                        <TextBlock Text="Select Your Name:"  
+                                   VerticalAlignment="Center"  
+                                   HorizontalAlignment="Center"   
+                                   Margin="200,0,0,0"   
+                                   FontWeight="Normal"   
+                                   FontSize="14"   />
+
+                        <ComboBox x:Name="UserComboBox" 
+                                  Height = "30" Width = "120" 
+                                  HorizontalAlignment = "Center" 
+                                  Margin = "20,0,0,0"
+                                  FontSize="14">
+                        </ComboBox>
+                        
+                    </StackPanel>
+                   </Border>
+
+                <Border Grid.Row="2"
+                        Width=" 640"  
+                        Height="Auto"   
+                        BorderThickness="0"   
+                        BorderBrush="Black"   
+                        CornerRadius="8"   
+                        Opacity="1">
+                    
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Right"
+                                Width="400">
+                        
+                        <Button x:Name="btnPrev"
+                                Content="Select your previous order"  
+                                Width="Auto"   
+                                Height="30" 
+                                Margin="180,0,0,0"  
+                                FontSize="14"   
+                                FontWeight="Normal"  
+                                Click="BtnPrev_Click" />
+                        
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Row="3"
+                        Width=" 640"  
+                        Height="Auto"   
+                        BorderThickness="1"   
+                        BorderBrush="Black"   
+                        CornerRadius="8"   
+                        Opacity="1">
+                    <StackPanel x:Name="MenuPanel"
+                        Orientation="Vertical"   
+                        HorizontalAlignment="Center"  
+                        VerticalAlignment="Center"  
+                        Width="Auto"  
+                        Height="Auto" 
+                                Margin="10,0,0,0"/>
+                    <!--
+                    <Grid x:Name="tabel1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    -->
+                    
+                </Border>
+
+                <Border Grid.Row="4"
+                        Width=" 640"  
+                        Height="Auto"   
+                        BorderThickness="0">
+                    <StackPanel x:Name="PriceRow"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right">
+                        <TextBlock x:Name="Price" 
+                                    Text = "Total: € "
+                                    Height="20"
+                                    Width="Auto"
+                                    HorizontalAlignment="Right"  
+                                    Margin="0,0,0,0"
+                                    FontWeight="Bold"
+                                   FontSize="14"    />
+                        <TextBlock x:Name="TotalPrice" 
+                                    Height="20"
+                                    Width="100"
+                                    HorizontalAlignment="Right"  
+                                    Margin="0,0,240,0"
+                                    Text="0,00"
+                                   FontSize="14"
+                                   FontWeight="Bold" />
+                    </StackPanel>
+                    
+                </Border>
+
+                <Border Grid.Row="5"
+                        Width=" 640"  
+                        Height="Auto"   
+                        BorderThickness="0">
+                    <TextBlock x:Name="CommentLbl" 
+                             Text = "Comments: "
+                             Height="20"
+                             Width="Auto"
+                               FontSize="14"
+                             HorizontalAlignment="Left"  
+                             Margin="0,0,0,0"
+                             />
+                </Border>
+                <Border Grid.Row="6"
+                        Width=" 640"  
+                        Height="Auto"   
+                        BorderThickness="0">
+                    <TextBox x:Name="CommentTb" 
+                             Height="100"
+                             Width="Auto"
+                             FontSize="14"/>
+                </Border>
+                
+                <Border Grid.Row="7"
+                        Width=" 640"  
+                        Height="Auto"   
+                        BorderThickness="0">
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Right"
+                                Width="300">
+
+                        <Button x:Name="btnSend"
+                                Content="Save order"  
+                                Width="Auto"   
+                                Height="30" 
+                                Margin="180,0,0,0"  
+                                FontSize="14"   
+                                FontWeight="Normal"  
+                                Click="BtnSend_Click" />
+
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Page> 

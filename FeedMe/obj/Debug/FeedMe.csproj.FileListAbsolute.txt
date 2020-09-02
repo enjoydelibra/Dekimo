@@ -1,0 +1,17 @@
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\bin\Debug\FeedMe.exe.config
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\bin\Debug\FeedMe.exe
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\bin\Debug\FeedMe.pdb
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\FeedMe.csprojAssemblyReference.cache
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\MainWindow.g.cs
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\App.g.cs
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\FeedMe_MarkupCompile.cache
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\FeedMe_MarkupCompile.lref
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\MainWindow.baml
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\FeedMe.g.resources
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\FeedMe.Properties.Resources.resources
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\FeedMe.csproj.GenerateResource.cache
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\FeedMe.csproj.CoreCompileInputs.cache
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\FeedMe.exe
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\FeedMe.pdb
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\Views\HomePage.g.cs
+C:\Users\Joyce\source\repos\FeedMe\FeedMe\obj\Debug\Views\HomePage.baml
